@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelpHub - Charity Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="123.png" alt="HelpHub Logo" width="150">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1 id="charity-name">Charity Name</h1>
+            <img id="charity-logo" src="" alt="Charity Logo" width="200" style="display: none;"><br><br>
+            <p id="charity-description">Loading charity information...</p>
+            <p id="charity-contact"></p>
+            <p id="charity-website"></p>
+
+            <button id="volunteerBtn">Volunteer Now</button>
+
+            <section id="volunteerForm" style="display: none; margin-top: 20px;">
+                <h2>Contact Information</h2>
+                <form id="volunteerFormInner">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Why do you want to volunteer?</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="volunteerMsg" style="color: green; font-weight: bold;"></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 HelpHub | Created by Alex Ni</p>
+    </footer>
+    <script src="charity_profile.js"></script>
+</body>
